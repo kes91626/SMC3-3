@@ -5,10 +5,10 @@ public class Number {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		System.out.print("10°³ÀÇ ·£´ı ¼ıÀÚ Áß ÇÏ³ª¸¦ ¸ÂÃçº¸¼¼¿ä : ");
-		int number = sc.nextInt();
+		System.out.print("10ê°œì˜ ëœë¤ ìˆ«ì ì¤‘ í•˜ë‚˜ë¥¼ ë§ì¶°ë³´ì„¸ìš” : ");
+		int number = sc.nextInt(); //ìŠ¤ìºë„ˆ ìƒì„±
 		
-		int diff =0;
+		int diff =0; 	// ë‹¹ì²¨ë˜ë©´ 1 ë‹¹ì²¨ë˜ì§€ ì•Šìœ¼ë©´ 0
 		int[] rand = new int[10]; 	
 		for(int i=0; i<10; i++){
 			rand[i] = (int)(Math.random() * 50 + 1);
@@ -18,11 +18,11 @@ public class Number {
 		
 		for(int j=0; j<10; j++){
 			if(rand[j] == number){
-				System.out.println("Á¤´ä");
-				diff=1;
+				System.out.println("ì •ë‹µ");
+				diff=1;		//ë‹¹ì²¨ ë˜ì—ˆìœ¼ë‹ˆ 1
 			}
 		}
-		if(diff==0)System.out.println("²Î!");
+		if(diff==0)System.out.println("ê½!");	//ê½ì´ë©´ 0
 		
 		
 	}
